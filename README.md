@@ -65,7 +65,7 @@ diabetes-readmission/
 
 ---
 
-## ⚙️ How to Run
+## ⚙️ How to Run NEED TO UPDATE THIS !!!
 
 ### Option 1 — Google Colab (recommended, no install needed)
 
@@ -81,12 +81,11 @@ diabetes-readmission/
 > **Note:** The dataset is downloaded automatically in the first notebook cell from the
 > Kaggle URL. No manual download required.
 
-### Option 2 — Local Jupyter
+### Option 2 — Local Jupyter NEED TO UPDATE THIS !!!
 
 ```bash
 # Clone the repo
-git clone https://github.com/yourteam/diabetes-readmission.git
-cd diabetes-readmission
+git clone https://github.com/aspurser84-dot/BIFX546-project.git
 
 # Install dependencies
 pip install -r requirements.txt
@@ -99,7 +98,7 @@ Open notebooks in order: `01_eda.ipynb` → `02_hypothesis_testing.ipynb` → `0
 
 ---
 
-## 📈 Key Results & Plots
+## 📈 Key Results & Plots NEED TO UPDATE THIS !!!
 
 | Figure | File | Description |
 |---|---|---|
@@ -107,7 +106,7 @@ Open notebooks in order: `01_eda.ipynb` → `02_hypothesis_testing.ipynb` → `0
 | Fig 2 | `results/fig2_correlation_heatmap.png` | Correlation matrix of numeric clinical features |
 | Fig 3 | `results/fig3_roc_curve.png` | ROC curve comparing logistic regression vs. decision tree |
 
-**Model performance summary:**
+**Model performance summary:** NEED TO UPDATE THIS !!!
 
 | Model | Accuracy | Precision | Recall | AUC-ROC |
 |---|---|---|---|---|
@@ -116,14 +115,12 @@ Open notebooks in order: `01_eda.ipynb` → `02_hypothesis_testing.ipynb` → `0
 
 ---
 
-## 📝 Summary of Findings
+## Early Insights:
+This dataset provides insight on the predominant variant over time. 
+Some instances of multiple variants circulating, for the most part one variant becomes the predominant variant for a short period of time. 
+As that variant starts to decrease, we can see another variant increase and become the predominant variant
 
-Our EDA revealed that readmission rates differ substantially across age groups, with
-patients aged 70–80 showing the highest 30-day readmission rate (~14%). A chi-square
-test confirmed a statistically significant association between primary diagnosis category
-and readmission status (p < 0.001), and bootstrap confidence intervals placed the
-overall readmission rate at 11.2% ± 0.4%.
-
+## 📝 Summary of Findings NEED TO UPDATE THIS !!!
 The logistic regression model achieved an AUC-ROC of 0.79, outperforming the
 decision tree (0.74). The three strongest predictors of readmission were number of
 inpatient visits in the prior year, number of diagnoses recorded at discharge, and
@@ -134,7 +131,7 @@ exclusion of social determinants of health, which likely confound readmission ri
 
 ---
 
-## 📦 Dependencies
+## 📦 Dependencies NEED TO UPDATE THIS !!!
 
 See `requirements.txt`. Core packages:
 
@@ -150,7 +147,7 @@ jupyter
 
 ---
 
-## 📜 References
+## 📜 References NEED TO UPDATE THIS !!!
 
 1. Strack, B., DeShazo, J.P., et al. (2014). Impact of HbA1c Measurement on Hospital
    Readmission Rates: Analysis of 70,000 Clinical Database Patient Records.
