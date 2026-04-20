@@ -3,7 +3,8 @@
 
 **Author:**
 - Amanda Graham (asg6@hood.edu)
-
+**Professor:**
+- Dr. Sarangan Ravichandran
 ---
 
 ## 🎯 Project Goal
