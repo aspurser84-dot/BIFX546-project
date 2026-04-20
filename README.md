@@ -4,7 +4,7 @@
 **Author:**
 - Amanda Graham (asg6@hood.edu)
 
-**Professor:**
+**Instructor:**
 - Dr. Sarangan Ravichandran
 ---
 
