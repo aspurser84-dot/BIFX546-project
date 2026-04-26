@@ -100,20 +100,21 @@ Open notebooks in order: `01_eda.ipynb` → `02_hypothesis_testing.ipynb` → `0
 
 ---
 
-## 📈 Key Results & Plots NEED TO UPDATE THIS !!!
+## 📈 Key Results & Plots
 
 | Figure | File | Description |
 |---|---|---|
-| Fig 1 | `results/fig1_readmission_by_age.png` | Readmission rate by age group (bar chart) |
-| Fig 2 | `results/fig2_correlation_heatmap.png` | Correlation matrix of numeric clinical features |
-| Fig 3 | `results/fig3_roc_curve.png` | ROC curve comparing logistic regression vs. decision tree |
+| Fig 1 | `results/Fig1_Distribution_of_Variants.png` | Number of specimens collected per variant (box plot) |
+| Fig 2 | `results/Fig2_Specimens_Collected_Over_Time.png` | Number of specimens collected over time by variant (scatter plot) |
+| Fig 3 | `results/Fig3_Percentage_Variants_Over_Time.png` | Percentage of specimens collected over time by variant (scatter plot) |
+| Fig 3 | `results/Fig4_Rate_of_change_per_Variant.png` | Rate of change per variant over time (line plot) |
+| Fig 3 | `results/Fig5_7day_avg_rate_of_change_per_variant.png` | 7 day average rate of change per variant over time (line plot) |
 
-**Model performance summary:** NEED TO UPDATE THIS !!!
+**Model performance summary:**
 
-| Model | Accuracy | Precision | Recall | AUC-ROC |
+| Model | Accuracy | Precision | Recall |
 |---|---|---|---|---|
-| Logistic Regression | 0.74 | 0.61 | 0.58 | 0.79 |
-| Decision Tree | 0.70 | 0.57 | 0.62 | 0.74 |
+| Random Forest | 0.65 | 1.0 | 0.65 |
 
 ---
 
