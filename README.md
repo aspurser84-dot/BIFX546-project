@@ -10,9 +10,9 @@
 
 ## 🎯 Project Goal
 
-Can we predict the next circulating variant of COVID-19 based on a selection of features?
+###Can we predict the next circulating variant of COVID-19 based on a selection of features?
 
-We hypothesize that there is typically one predominant circlulating variant of COVID-19 during a timeframe. Using a set of features such as the number of specimens collected, the percentage of specimens collected and the change in variant specimens collected per day we can predict the next predominant circulating variant.
+We hypothesize that there is typically one predominant circlulating variant of COVID-19 during a time frame. Using a set of features such as the number of specimens collected, the percentage of specimens collected and the change in variant specimens collected per day and 7 day averages, we can predict the next predominant circulating variant.
 
 ---
 
@@ -33,27 +33,26 @@ The dataset contains COVID-19 variant data collected including date, area (Calif
 ## 🧠 Techniques Used NEED TO UPDATE THIS!!!
 
 | Phase | Technique | Course Week | 
-|---|---|---|
-| EDA | Descriptive statistics (mean, median, std, IQR) | Week 5 |
-| EDA | Distribution plots, correlation heatmap, bar charts | Week 3 |
-| Analysis | Chi-square test of independence (readmission vs. diagnosis group) | Week 6 |
-| Analysis | Bootstrap confidence intervals on readmission rate | Week 6 |
-| Modeling | Logistic Regression with train/test split (80/20) | Week 10 |
-| Modeling | Decision Tree for feature importance comparison | Week 11 |
-| Evaluation | Accuracy, Precision, Recall, AUC-ROC | Week 10–11 |
+|---|---|
+| EDA | Descriptive statistics (count, average, standard deviation, minimum, quantiles, and the maximum) |
+| Data Cleaning | Convert data types, remove variables, calculate 7 day averages, calculate rate change, remove zero values |
+| EDA | Distribution of Variants, Number of Specimens Collected Over Time by Variant, Percentage of Variants Over Time, Rate of Change per Variant and 7 Day Rate of Change per Variant |
+| Modeling | Establishing threshold on feature 'percentage' |
+| Modeling | Stratify train/test split (80/20) |
+| Modeling | Random Forest model, Training Accuracy, OOB Score, Class Distribution and Weights |
+| Evaluation | Testing Accuracy, Precision, Recall, f1 score, Confusion Matrix |
 
 ---
 
 ## 📁 Repository Structure NEED TO UPDATE THIS!!!
 
 ```
-diabetes-readmission/
-├── notebooks/
-│   ├── 01_eda.ipynb              # Data loading, cleaning, EDA
-│   ├── 02_hypothesis_testing.ipynb  # Statistical tests
-│   └── 03_modeling.ipynb         # Logistic regression + decision tree
+BIFX546-project/
 ├── data/
-│   └── README_data.md            # Link to UCI source; raw file not included (>50MB)
+│   └── covid19_variant.csv            # raw CSV file included (>50MB)
+├── notebooks/
+│   ├── Final_project_BIFX546_Graham.ipynb              # Data loading, cleaning, EDA, Random Forest Modeling and Evaluation
+│   ├── Supplemental.ipynb  # Statistical tests         # Additional modeling attempted including Time series split using RF, Balanced RF, Easy                                                             Ensemble model and SMOTE
 ├── results/
 │   ├── fig1_readmission_by_age.png
 │   ├── fig2_correlation_heatmap.png
