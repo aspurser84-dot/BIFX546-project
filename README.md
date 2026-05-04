@@ -10,7 +10,7 @@
 
 ## 🎯 Project Goal
 
-###Can we predict the next circulating variant of COVID-19 based on a selection of features?
+Can we predict the next circulating variant of COVID-19 based on a selection of features?
 
 We hypothesize that there is typically one predominant variant of COVID-19 circlulating during a time frame. Using a set of features such as the number of specimens collected, the percentage of specimens collected and the rate change in variant specimens collected per day and 7 day averages for these features, we can predict the next predominant circulating variant using a Random Forest model.
 
@@ -44,7 +44,7 @@ The dataset contains COVID-19 variant data collected including date, area (Calif
 
 # Modeling Approach and Justification
 
-A Random Forest model was chosen based on the dataset containing labeled data and the goal of predicting a acategory (variant).
+#### A Random Forest model was chosen based on the dataset containing labeled data and the goal of predicting a acategory (variant).
 ---
 
 ## 📁 Repository Structure
@@ -151,4 +151,3 @@ scikit-learn>=1.2
 ---
 
 *BIFX-546 · Hood College · Spring 2026 · Instructor: Dr. Sarangan Ravichandran*
-
