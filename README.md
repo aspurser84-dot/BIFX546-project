@@ -45,7 +45,7 @@ The dataset contains COVID-19 variant data collected including date, area (Calif
 ---
 # Modeling Approach and Justification
 
-#### A Random Forest model was chosen based on the dataset being small (less than 100K samples) and containing labeled data. The goal of this project is predicting a category (variant). Based on this information an Ensamble Classifier (Random Forest) model was chosen.
+#### A Random Forest model was chosen based on the dataset being small (less than 100K samples) and containing labeled data. The goal of this project is predicting a category (variant). Based on this information an Ensamble Classifier (Random Forest) model wwould be the most appropriate.
 ---
 
 ## 📁 Repository Structure
