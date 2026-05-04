@@ -32,7 +32,7 @@ The dataset contains COVID-19 variant data collected including date, area (Calif
 
 ## 🧠 Techniques Used
 
-| Phase | Technique | Course Week | 
+| Phase | Technique |
 |---|---|
 | EDA | Descriptive statistics (count, average, standard deviation, minimum, quantiles, and the maximum) |
 | Data Cleaning | Convert data types, remove variables, calculate 7 day averages, calculate rate change, remove zero values |
@@ -44,7 +44,7 @@ The dataset contains COVID-19 variant data collected including date, area (Calif
 
 ---
 
-## 📁 Repository Structure NEED TO UPDATE THIS!!!
+## 📁 Repository Structure
 
 ```
 BIFX546-project/
@@ -68,7 +68,7 @@ BIFX546-project/
 
 ---
 
-## ⚙️ How to Run NEED TO UPDATE THIS !!!
+## ⚙️ How to Run
 
 ### Option 1 — Google Colab (recommended, no install needed)
 
@@ -103,25 +103,17 @@ BIFX546-project/
 
 **Model performance summary:**##CONTINUE HERE
 
-| Model | Accuracy | Precision | Recall |
+| Model | Accuracy | Precision | Recall | f1 Score |
 |---|---|---|---|---|
-| Random Forest | 0.65 | 1.0 | 0.65 |
-
+| Random Forest | 76.45% | 77.80% | 76.45% | 76.84% |
+ 
 ---
 
 ## Early Insights:
-This dataset provides insight on the predominant variant over time. 
-Some instances of multiple variants circulating, for the most part one variant becomes the predominant variant for a short period of time. 
-As that variant starts to decrease, we can see another variant increase and become the predominant variant
+This dataset provides insight on the predominant variant over time. There are some instances of multiple variants circulating in the dataset. However, for the most part one variant becomes the predominant variant for a short period of time. As that variant starts to decrease, we can see another variant increase and become the predominant variant. Using a set of features such as the number of specimens collected, percentage of specimens collected, specimens 7 day average, the percentage 7 day average, rate of change and the 7 day average rate of change a Random Forest model was trained and tested. Further refinement to the model was made to implement a threshold cutoff for the variable 'percentage'.
 
-## 📝 Summary of Findings NEED TO UPDATE THIS !!!
-The logistic regression model achieved an AUC-ROC of 0.79, outperforming the
-decision tree (0.74). The three strongest predictors of readmission were number of
-inpatient visits in the prior year, number of diagnoses recorded at discharge, and
-HbA1c result. These findings suggest that care-transition planning — particularly for
-high-comorbidity patients with prior hospitalizations — may be the highest-yield
-intervention target. Limitations include the dataset's age (1999–2008) and the
-exclusion of social determinants of health, which likely confound readmission risk.
+## 📝 Summary of Findings
+Using a Random Forest model with a threshold cutoff on the variable 'percentage' proves to be the best Random Forest model. The original model training accuracy reached 100% but the OOB score was low at 76.6% with a testing accuracy at 76%. Adding additional trees did not have much of an impact on the OOB score. The most important factor for the model was stratifying the splitting so that there was a larger distribution of all variants present in the training and testing dataset. Splitting the dataset using time series split proved to limit the testing dataset to only four variants present (see supplemental notebook). This threshold cutoff allowed all eight variants to be trained and tested on. However it is possible to increase this threshold cutoff to 30% which increases the testing accuracy, precision, recall and f1 score up to 90% however, this comes at a cost of removing variants present in low abundace and only four variants would be found in the testing and training dataset.
 
 ---
 
@@ -143,17 +135,12 @@ jupyter
 
 ## 📜 References NEED TO UPDATE THIS !!!
 
-1. Strack, B., DeShazo, J.P., et al. (2014). Impact of HbA1c Measurement on Hospital
-   Readmission Rates: Analysis of 70,000 Clinical Database Patient Records.
-   *BioMed Research International*, Article ID 781670.
-   https://doi.org/10.1155/2014/781670
+1. Kagglehub Repository. COVID-19 Variant Data.
+   https://www.kaggle.com/datasets/nidzsharma/covid-19-variant-data
 
-2. UCI Machine Learning Repository. (2014). Diabetes 130-US Hospitals Dataset.
-   https://archive.ics.uci.edu/dataset/296
-
-3. Grus, J. (2019). *Data Science from Scratch* (2nd ed.). O'Reilly Media.
+2. Grus, J. (2019). *Data Science from Scratch* (2nd ed.). O'Reilly Media.
 
 ---
 
-*BIFX-546 · Hood College · Spring 2026 · Dr. Sarangan Ravichandran*
+*BIFX-546 · Hood College · Spring 2026 · Instructor: Dr. Sarangan Ravichandran*
 
