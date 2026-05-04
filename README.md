@@ -53,7 +53,8 @@ BIFX546-project/
 ├── notebooks/
 │   ├── Final_project_BIFX546_Graham.ipynb              # Data loading, cleaning, EDA, Random Forest Modeling and Evaluation
 │   ├── Supplemental.ipynb  # Statistical tests         # Additional modeling attempted
-                                             including Time series split using RF, Balanced RF, Easy Ensemble model and SMOTE
+                                                         including Time series split using RF, Balanced RF,
+                                                          Easy Ensemble model and SMOTE
 ├── results/
 │   ├── Fig1_Distribution_of_Variants.png
 │   ├── Fig2_Specimens_Collected_Over_Time.png
