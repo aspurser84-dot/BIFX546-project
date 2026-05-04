@@ -42,6 +42,9 @@ The dataset contains COVID-19 variant data collected including date, area (Calif
 | Modeling | Random Forest model, Training Accuracy, OOB Score, Class Distribution and Weights |
 | Evaluation | Testing Accuracy, Precision, Recall, f1 score, Confusion Matrix |
 
+# Modeling Approach and Justification
+
+A Random Forest model was chosen based on the dataset containing labeled data and the goal of predicting a acategory (variant).
 ---
 
 ## 📁 Repository Structure
