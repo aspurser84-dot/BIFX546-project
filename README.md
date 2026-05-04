@@ -81,11 +81,16 @@ BIFX546-project/
    ```python
    !pip install -r https://raw.githubusercontent.com/aspurser84-dot/BIFX546-project/main/requirements.txt
    ```
-5.Run the second cell set up the directory.
+
+5. Run the second cell set up the directory.
+
 6. Run one of the two upload options:
-   Option 1. Download the covid19_variant.csv file from this repository data folder -> run the third cell -> choose the covid19_variant.csv file    from the downloads folder.
-   Option 2. Recommended. Run the fourth cell.
-7. Run all cells: **Runtime → Run all**
+
+    Option 1. Download the covid19_variant.csv file from this repository data folder -> run the third cell -> choose the covid19_variant.csv file from the downloads folder.
+
+    Option 2. Recommended. Run the fourth cell.
+
+8. Run all cells: **Runtime → Run focused cell and all cells below**
 
 > **Note:** The dataset is downloaded automatically in the second download option from the
 > Kaggle URL. No manual download required.
@@ -103,7 +108,7 @@ BIFX546-project/
 | Fig 5 | `results/Fig5_Average_Rate_of_Change_per_Variant.png` | 7 day average rate of change per variant over time (line plot) |
 | Fig 6 | `results/Fig6_Confusion_Matrix.png` | Confusion Matrix of final Random Forest model |
 
-**Model performance summary:**##CONTINUE HERE
+**Model performance summary:**
 
 | Model | Accuracy | Precision | Recall | f1 Score |
 |---|---|---|---|---|
@@ -119,7 +124,7 @@ Using a Random Forest model with a threshold cutoff on the variable 'percentage'
 
 ---
 
-## 📦 Dependencies NEED TO UPDATE THIS !!!
+## 📦 Dependencies
 
 See `requirements.txt`. Core packages:
 
@@ -129,13 +134,11 @@ numpy>=1.23
 matplotlib>=3.6
 seaborn>=0.12
 scikit-learn>=1.2
-scipy>=1.10
-jupyter
 ```
 
 ---
 
-## 📜 References NEED TO UPDATE THIS !!!
+## 📜 References
 
 1. Kagglehub Repository. COVID-19 Variant Data.
    https://www.kaggle.com/datasets/nidzsharma/covid-19-variant-data
