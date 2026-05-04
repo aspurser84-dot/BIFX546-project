@@ -12,7 +12,7 @@
 
 ###Can we predict the next circulating variant of COVID-19 based on a selection of features?
 
-We hypothesize that there is typically one predominant circlulating variant of COVID-19 during a time frame. Using a set of features such as the number of specimens collected, the percentage of specimens collected and the change in variant specimens collected per day and 7 day averages, we can predict the next predominant circulating variant.
+We hypothesize that there is typically one predominant variant of COVID-19 circlulating during a time frame. Using a set of features such as the number of specimens collected, the percentage of specimens collected and the rate change in variant specimens collected per day and 7 day averages for these features, we can predict the next predominant circulating variant using a Random Forest model.
 
 ---
 
