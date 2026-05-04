@@ -49,7 +49,7 @@ The dataset contains COVID-19 variant data collected including date, area (Calif
 ```
 BIFX546-project/
 ├── data/
-│   └── covid19_variant.csv            # raw CSV file included (409KB)
+│   └── covid19_variant.csv                             # raw CSV file included (409KB)
 ├── notebooks/
 │   ├── Final_project_BIFX546_Graham.ipynb              # Data loading, cleaning, EDA, Random Forest Modeling and Evaluation
 │   ├── Supplemental.ipynb  # Statistical tests         # Additional modeling attempted
@@ -63,7 +63,7 @@ BIFX546-project/
 │   ├── Fig5_Average_Rate_of_Change_per_Variant.png
 │   └── Fig6_Confusion_Matrix
 ├── src/
-│   └── .gitkeep             # Optional folder for temp
+│   └── .gitkeep                                       # Optional folder for temp
 ├── README.md
 └── requirements.txt
 ```
