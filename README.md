@@ -30,7 +30,7 @@ The dataset contains COVID-19 variant data collected including date, area (Calif
 
 ---
 
-## 🧠 Techniques Used NEED TO UPDATE THIS!!!
+## 🧠 Techniques Used
 
 | Phase | Technique | Course Week | 
 |---|---|
@@ -49,17 +49,19 @@ The dataset contains COVID-19 variant data collected including date, area (Calif
 ```
 BIFX546-project/
 ├── data/
-│   └── covid19_variant.csv            # raw CSV file included (>50MB)
+│   └── covid19_variant.csv            # raw CSV file included (409KB)
 ├── notebooks/
 │   ├── Final_project_BIFX546_Graham.ipynb              # Data loading, cleaning, EDA, Random Forest Modeling and Evaluation
 │   ├── Supplemental.ipynb  # Statistical tests         # Additional modeling attempted including Time series split using RF, Balanced RF, Easy                                                             Ensemble model and SMOTE
 ├── results/
-│   ├── fig1_readmission_by_age.png
-│   ├── fig2_correlation_heatmap.png
-│   ├── fig3_roc_curve.png
-│   └── table1_model_metrics.csv
+│   ├── Fig1_Distribution_of_Variants.png
+│   ├── Fig2_Specimens_Collected_Over_Time.png
+│   ├── Fig3_Percentage_Variants_Over_Time.png
+│   ├── Fig4_Rate_of_Change_per_Variant.png
+│   ├── Fig5_Average_Rate_of_Change_per_Variant.png
+│   └── Fig6_Confusion_Matrix
 ├── src/
-│   └── preprocess.py             # Reusable cleaning functions
+│   └── .gitkeep             # Optional folder for temp
 ├── README.md
 └── requirements.txt
 ```
@@ -72,30 +74,19 @@ BIFX546-project/
 
 1. Open [Google Colab](https://colab.research.google.com)
 2. Click **File → Open notebook → GitHub**
-3. Paste this repo URL and select the notebook you want to run
+3. Paste this repo URL and select the notebook you want to run.
 4. Run the first cell to install dependencies:
    ```python
    !pip install -r requirements.txt
    ```
-5. Run all cells: **Runtime → Run all**
+5.Run the second cell set up the directory.
+6. Run one of the two upload options:
+   Option 1. Download the covid19_variant.csv file from this repository data folder -> run the third cell -> choose the covid19_variant.csv file    from the downloads folder.
+   Option 2. Recommended. Run the fourth cell.
+7. Run all cells: **Runtime → Run all**
 
-> **Note:** The dataset is downloaded automatically in the first notebook cell from the
+> **Note:** The dataset is downloaded automatically in the second download option from the
 > Kaggle URL. No manual download required.
-
-### Option 2 — Local Jupyter NEED TO UPDATE THIS !!!
-
-```bash
-# Clone the repo
-git clone https://github.com/aspurser84-dot/BIFX546-project.git
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Launch Jupyter
-jupyter notebook
-```
-
-Open notebooks in order: `01_eda.ipynb` → `02_hypothesis_testing.ipynb` → `03_modeling.ipynb`
 
 ---
 
@@ -106,10 +97,11 @@ Open notebooks in order: `01_eda.ipynb` → `02_hypothesis_testing.ipynb` → `0
 | Fig 1 | `results/Fig1_Distribution_of_Variants.png` | Number of specimens collected per variant (box plot) |
 | Fig 2 | `results/Fig2_Specimens_Collected_Over_Time.png` | Number of specimens collected over time by variant (scatter plot) |
 | Fig 3 | `results/Fig3_Percentage_Variants_Over_Time.png` | Percentage of specimens collected over time by variant (scatter plot) |
-| Fig 3 | `results/Fig4_Rate_of_change_per_Variant.png` | Rate of change per variant over time (line plot) |
-| Fig 3 | `results/Fig5_7day_avg_rate_of_change_per_variant.png` | 7 day average rate of change per variant over time (line plot) |
+| Fig 4 | `results/Fig4_Rate_of_Change_per_Variant.png` | Rate of change per variant over time (line plot) |
+| Fig 5 | `results/Fig5_Average_Rate_of_Change_per_Variant.png` | 7 day average rate of change per variant over time (line plot) |
+| Fig 6 | `results/Fig6_Confusion_Matrix.png` | Confusion Matrix of final Random Forest model |
 
-**Model performance summary:**
+**Model performance summary:**##CONTINUE HERE
 
 | Model | Accuracy | Precision | Recall |
 |---|---|---|---|---|
