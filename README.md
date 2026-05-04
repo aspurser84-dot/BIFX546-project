@@ -79,7 +79,7 @@ BIFX546-project/
 3. Paste this repo URL and select the notebook you want to run.
 4. Run the first cell to install dependencies:
    ```python
-   !pip install -r requirements.txt
+   !pip install -r https://raw.githubusercontent.com/aspurser84-dot/BIFX546-project/main/requirements.txt
    ```
 5.Run the second cell set up the directory.
 6. Run one of the two upload options:
