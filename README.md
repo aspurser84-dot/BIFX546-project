@@ -56,8 +56,8 @@ BIFX546-project/
 │   └── covid19_variant.csv                             # raw CSV file included (409KB)
 ├── notebooks/
 │   ├── Final_project_BIFX546_Graham.ipynb              # Data loading, cleaning, EDA, Random Forest Modeling and Evaluation
-│   ├── Supplemental.ipynb  # Statistical tests         # Additional modeling attempted
-                                                         including Time series split using RF, Balanced RF,
+│   ├── Supplemental.ipynb  # Statistical tests         # Additional modeling attempted in supplemental notebooks
+│   ├── Supplemental_2.ipynb  # Statistical tests        including Time series split using RF, Balanced RF,
                                                           Easy Ensemble model and SMOTE
 ├── results/
 │   ├── Fig1_Distribution_of_Variants.png
@@ -124,7 +124,7 @@ BIFX546-project/
 This dataset provides insight on the predominant variant over time. There are some instances of multiple variants circulating in the dataset. However, for the most part one variant becomes the predominant variant for a short period of time. As that variant starts to decrease, we can see another variant increase and become the predominant variant. Using a set of features such as the number of specimens collected, percentage of specimens collected, specimens 7 day average, the percentage 7 day average, rate of change and the 7 day average rate of change a Random Forest model was trained and tested. Further refinement to the model was made to implement a threshold cutoff for the variable 'percentage'.
 
 ## 📝 Summary of Findings
-Using a Random Forest model with a threshold cutoff on the variable 'percentage' proves to be the best Random Forest model. The original model training accuracy reached 100% but the OOB score was low at 76.6% with a testing accuracy at 76%. Adding additional trees did not have much of an impact on the OOB score. The most important factor for the model was stratifying the splitting so that there was a larger distribution of all variants present in the training and testing dataset. Splitting the dataset using time series split proved to limit the testing dataset to only four variants present (see supplemental notebook). This threshold cutoff allowed all eight variants to be trained and tested on. However it is possible to increase this threshold cutoff to 30% which increases the testing accuracy, precision, recall and f1 score up to 90% however, this comes at a cost of removing variants present in low abundance and only four variants would be found in the testing and training dataset.
+Using a Random Forest model with a threshold cutoff on the variable 'percentage' proves to be the best Random Forest model. The original model training accuracy reached 100% but the OOB score was low at 76.6% with a testing accuracy at 76%. Adding additional trees did not have much of an impact on the OOB score. The most important factor for the model was stratifying the splitting so that there was a larger distribution of all variants present in the training and testing dataset. Splitting the dataset using time series split proved to limit the testing dataset to only four variants present (see supplemental notebook). Additional models were tested to handle the imbalanced dataset including Balanced Random Forest model, Easy Ensemble model and the use of Synthetic Minority Over-sampling Technique (SMOTE). None of the additional models tested performed better than the original Random Forest model (see supplement_2 notebook). This threshold cutoff allowed all eight variants to be trained and tested on. However it is possible to increase this threshold cutoff to 30% which increases the testing accuracy, precision, recall and f1 score up to 90% however, this comes at a cost of removing variants present in low abundance and only four variants would be found in the testing and training dataset.
 
 ---
 
