@@ -36,7 +36,7 @@ The dataset contains COVID-19 variant data collected including date, area (Calif
 |---|---|
 | EDA | Descriptive statistics (count, average, standard deviation, minimum, quantiles, and the maximum) |
 | Data Cleaning | Convert data types, remove variables, calculate 7 day averages, calculate rate change, remove zero values |
-| EDA | Distribution of Variants, Number of Specimens Collected Over Time by Variant, Percentage of Variants Over Time, Rate of Change per Variant and 7 Day Rate of Change per Variant |
+| Visualizations | Distribution of Variants, Number of Specimens Collected Over Time by Variant, Percentage of Variants Over Time, Rate of Change per Variant and 7 Day Rate of Change per Variant |
 | Modeling | Establishing threshold on feature 'percentage' |
 | Modeling | Stratify train/test split (80/20) |
 | Modeling | Random Forest model, Training Accuracy, OOB Score, Class Distribution and Weights |
